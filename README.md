@@ -13,6 +13,20 @@ Follow [@SankeyMATIC@vis.social](https://vis.social/@SankeyMATIC) on Mastodon fo
 
 Produced by **Steve Bogart** ([@nowthis@tilde.zone](https://tilde.zone/@nowthis))
 
+## Repository Structure
+
+This repository is organized into two main parts:
+
+* **`sankey-lib/`** - Core Sankey diagram layout engine
+  * Pure layout algorithm with no DOM dependencies
+  * Can be used independently of the website
+  * See [sankey-lib/README.md](sankey-lib/README.md) for library documentation
+
+* **`build/`** - SankeyMATIC website application
+  * User interface for creating Sankey diagrams
+  * Integrates the core library with web UI
+  * See [build/README.md](build/README.md) for website documentation
+
 ### Packages used:
 
 * [d3.js](https://github.com/d3/d3) version 7.x
