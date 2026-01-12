@@ -1,0 +1,24 @@
+{
+  "name": "sankeymatic",
+  "version": "1.0.0",
+  "description": "Make Beautiful Flow Diagrams - A Sankey diagram builder for everyone",
+  "main": "build/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nowthis/sankeymatic.git"
+  },
+  "keywords": [
+    "sankey",
+    "diagram",
+    "d3",
+    "visualization"
+  ],
+  "author": "Steve Bogart",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "dependencies": {
+    "d3": "^7.9.0"
+  }
+}
