@@ -4,7 +4,8 @@
   "description": "Make Beautiful Flow Diagrams - A Sankey diagram builder for everyone",
   "main": "build/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cd build && ln -sf ../node_modules/d3 d3"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "author": "Steve Bogart",
   "license": "SEE LICENSE IN LICENSE.txt",
   "dependencies": {
-    "d3": "^7.9.0"
+    "d3": "^7.9.0",
+    "d3-sankey": "^0.12.3"
   }
 }
