@@ -412,42 +412,44 @@ labels relativesize 100
 
 // Expose all constants to global scope for webpack compatibility
 if (typeof window !== 'undefined') {
-  window.MAXBREAKPOINT = MAXBREAKPOINT;
-  window.skmSettings = skmSettings;
-  window.reWholeNumber = reWholeNumber;
-  window.reHalfNumber = reHalfNumber;
-  window.reInteger = reInteger;
-  window.reDecimal = reDecimal;
-  window.reCommentLine = reCommentLine;
-  window.reYesNo = reYesNo;
-  window.reYes = reYes;
-  window.reSettingsValue = reSettingsValue;
-  window.reSettingsText = reSettingsText;
-  window.reMoveLine = reMoveLine;
-  window.sourceHeaderPrefix = sourceHeaderPrefix;
-  window.sourceURLLine = sourceURLLine;
-  window.userDataMarker = userDataMarker;
-  window.movesMarker = movesMarker;
-  window.settingsMarker = settingsMarker;
-  window.settingsAppliedPrefix = settingsAppliedPrefix;
-  window.settingsToBackfill = settingsToBackfill;
-  window.NODE_OBJ = NODE_OBJ;
-  window.reNodeLineLoose = reNodeLineLoose;
-  window.reNodeLineStrict = reNodeLineStrict;
-  window.reAttributeLine = reAttributeLine;
-  window.validAttributes = validAttributes;
-  window.reFlowTargetWithSuffix = reFlowTargetWithSuffix;
-  window.reColorPlusOpacity = reColorPlusOpacity;
-  window.reBareColor = reBareColor;
-  window.reRGBColor = reRGBColor;
-  window.colorGray60 = colorGray60;
-  window.userInputsField = userInputsField;
-  window.breakpointField = breakpointField;
-  window.IN = IN;
-  window.OUT = OUT;
-  window.BEFORE = BEFORE;
-  window.AFTER = AFTER;
-  window.fontMetrics = fontMetrics;
-  window.highlightStyles = highlightStyles;
-  window.sampleDiagramRecipes = sampleDiagramRecipes;
+  Object.assign(window, {
+    MAXBREAKPOINT,
+    skmSettings,
+    reWholeNumber,
+    reHalfNumber,
+    reInteger,
+    reDecimal,
+    reCommentLine,
+    reYesNo,
+    reYes,
+    reSettingsValue,
+    reSettingsText,
+    reMoveLine,
+    sourceHeaderPrefix,
+    sourceURLLine,
+    userDataMarker,
+    movesMarker,
+    settingsMarker,
+    settingsAppliedPrefix,
+    settingsToBackfill,
+    NODE_OBJ,
+    reNodeLineLoose,
+    reNodeLineStrict,
+    reAttributeLine,
+    validAttributes,
+    reFlowTargetWithSuffix,
+    reColorPlusOpacity,
+    reBareColor,
+    reRGBColor,
+    colorGray60,
+    userInputsField,
+    breakpointField,
+    IN,
+    OUT,
+    BEFORE,
+    AFTER,
+    fontMetrics,
+    highlightStyles,
+    sampleDiagramRecipes,
+  });
 }

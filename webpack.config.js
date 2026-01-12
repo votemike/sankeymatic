@@ -7,7 +7,4 @@ module.exports = {
     filename: 'sankeymatic-bundle.js',
     path: path.resolve(__dirname, 'build'),
   },
-  resolve: {
-    extensions: ['.js'],
-  },
 };

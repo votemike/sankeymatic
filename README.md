@@ -15,8 +15,19 @@ Produced by **Steve Bogart** ([@nowthis@tilde.zone](https://tilde.zone/@nowthis)
 
 ### Packages used:
 
-* [d3.js](https://github.com/d3/d3) version 7.x
-* [Canvg](https://github.com/canvg/canvg) 3.0.9
+* [d3.js](https://github.com/d3/d3) version 7.x (installed via NPM)
+* [Canvg](https://github.com/canvg/canvg) 3.0.9 (loaded from CDN)
+
+### Development:
+
+To build the application:
+
+```bash
+npm install
+npm run build
+```
+
+This will bundle the JavaScript files using webpack and output `sankeymatic-bundle.js` to the `build/` directory.
 
 ### Background:
 
