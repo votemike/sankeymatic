@@ -5,7 +5,9 @@ d3.sankey = () => {
     // Set up some handy constants (acting as enums)
     // These numbers are relatively prime so each cross-product is unique
     // (when we need that)
-    [SOURCES, TARGETS, TOP, BOTTOM, NEAREST] = [2, 3, 5, 7, 11];
+    [SOURCES, TARGETS, TOP, BOTTOM, NEAREST] = [2, 3, 5, 7, 11],
+    // Direction constants for flow tracking
+    [IN, OUT] = [13, 17];
 
   // Set by inputs:
   let nodeWidth = 9,
@@ -56,9 +58,9 @@ d3.sankey = () => {
     return size;
   };
 
- sankey.rightJustifyEndpoints = function (x) {
-  if (arguments.length) { rightJustifyEndpoints = x; return sankey; }
-  return rightJustifyEndpoints;
+  sankey.rightJustifyEndpoints = function (x) {
+    if (arguments.length) { rightJustifyEndpoints = x; return sankey; }
+    return rightJustifyEndpoints;
   };
 
   sankey.leftJustifyOrigins = function (x) {
@@ -894,4 +896,4 @@ d3.sankey = () => {
 };
 
 // Make the linter happy about imported objects:
-/* global d3 IN OUT */
+/* global d3 */

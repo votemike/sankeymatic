@@ -1,12 +1,13 @@
 # Sankey Diagram Rendering Library
 
-This directory contains the core Sankey diagram layout engine, separated from the SankeyMATIC website code.
+This directory contains the core Sankey diagram layout engine, fully separated from the SankeyMATIC website code.
 
 ## Contents
 
 - **sankey.js** - Pure Sankey diagram layout algorithm
   - Calculates node positions and flow paths
   - No DOM dependencies
+  - Self-contained with all necessary constants defined internally
   - Requires only D3.js v7.x
   - Can be used independently of the SankeyMATIC website
 
