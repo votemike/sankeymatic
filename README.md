@@ -13,9 +13,27 @@ Follow [@SankeyMATIC@vis.social](https://vis.social/@SankeyMATIC) on Mastodon fo
 
 Produced by **Steve Bogart** ([@nowthis@tilde.zone](https://tilde.zone/@nowthis))
 
+### Development Setup
+
+To set up the project for local development:
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+   This will install d3 and d3-sankey from NPM and automatically create a symbolic link from `build/d3` to `node_modules/d3`.
+
+2. Serve the application locally:
+   ```bash
+   cd build
+   python3 -m http.server 8080
+   ```
+   Then open http://localhost:8080 in your browser.
+
 ### Packages used:
 
-* [d3.js](https://github.com/d3/d3) version 7.x
+* [d3.js](https://github.com/d3/d3) version 7.x (loaded from NPM)
+* [d3-sankey](https://github.com/d3/d3-sankey) version 0.12.x (available from NPM; project uses a custom modified version in `build/sankey.js`)
 * [Canvg](https://github.com/canvg/canvg) 3.0.9
 
 ### Background:
