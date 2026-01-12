@@ -1,0 +1,21 @@
+{
+  "name": "sankeymatic",
+  "version": "1.0.0",
+  "description": "* Describe your data using text. * Customize your diagram's appearance interactively. * Export a finished product as a PNG image and as SVG code. * Export/import your work in progress as readable (and diff-able) plain text files.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "build:dev": "webpack --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "d3": "^7.9.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.104.1",
+    "webpack-cli": "^6.0.1"
+  }
+}
